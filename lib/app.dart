@@ -1,6 +1,5 @@
 import 'package:base/config/routes/routes_name.dart';
 import 'package:base/config/routes/routes_pages.dart';
-import 'package:base/config/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,9 +10,8 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: RoutesName.onboarding,
+      initialRoute: RoutesName.home,
       getPages: RoutesPage().pages,
-      theme: darkTheme,
     );
   }
 }
