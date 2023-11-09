@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 class DetailController extends GetxController {
   late String image;
   late String title;
-  String carTag = "";
+  String cartTag = "";
 
   updateCartTag() {
-    carTag = '_tag';
+    cartTag = '_tag';
     update();
   }
 }

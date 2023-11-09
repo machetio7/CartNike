@@ -22,7 +22,7 @@ class Price extends StatelessWidget {
             style: const TextStyle(color: Colors.black),
           ),
           const TextSpan(
-            text: "/unit",
+            text: ".00",
             style:
                 TextStyle(color: Colors.black26, fontWeight: FontWeight.normal),
           )

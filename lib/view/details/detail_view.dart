@@ -12,6 +12,7 @@ class DetailView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    controller.cartTag = "";
     return GetBuilder<DetailController>(builder: (_) {
       return Scaffold(
         body: Column(
@@ -23,9 +24,9 @@ class DetailView extends StatelessWidget {
                 color: DefaultColor.bgColor,
               ),
               child: Hero(
-                tag: product.title! + controller.carTag,
+                tag: product.title + controller.cartTag,
                 child: Center(
-                  child: Image.asset(product.image!),
+                  child: Image.asset(product.image),
                 ),
               ),
             ),
@@ -55,7 +56,7 @@ class DetailView extends StatelessWidget {
                       Navigator.pop(context);
                     },
                     child: const Text(
-                      'Tarjeta de Crédito',
+                      'Add to Cart',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 16,

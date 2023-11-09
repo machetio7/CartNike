@@ -228,7 +228,9 @@ class BodyStack extends StatelessWidget {
       right: 0,
       height: constraints.maxHeight - headerHeight - cartBarHeight,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+        padding: const EdgeInsets.symmetric(
+          horizontal: defaultPadding,
+        ),
         decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
